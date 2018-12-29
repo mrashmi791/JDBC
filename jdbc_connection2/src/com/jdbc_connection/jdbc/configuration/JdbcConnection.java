@@ -22,6 +22,7 @@ public class JdbcConnection {
 		Statement st = conn.createStatement();
 		ResultSet rs = st.executeQuery(query);
 		
+		
 		rs.next();
 		String name = rs.getString("name");
 		int roll = rs.getInt("roll");
