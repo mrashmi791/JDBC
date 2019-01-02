@@ -1,6 +1,7 @@
 package com.jdbc_connection.jdbc.configuration;
 
 import java.sql.Connection;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
@@ -24,8 +25,8 @@ public class InsertRecordByUser {
 		Connection con = ConnectionConfiguration.getConnection();
 		Statement st = con.createStatement();
 		
-		int resultCount = st.executeUpdate(query);
-		System.out.println(resultCount);
+		ResultSet rs = st.executeQuery(query);
+		System.out.println(" row inserted");
 		st.close();
 		//con.close();
 		sc.close();
