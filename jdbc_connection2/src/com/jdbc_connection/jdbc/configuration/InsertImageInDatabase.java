@@ -16,7 +16,9 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 /**
- * @author lenovo
+ * Insert image in database.
+ * 
+ * @author Rashmi
  *
  */
 public class InsertImageInDatabase {
