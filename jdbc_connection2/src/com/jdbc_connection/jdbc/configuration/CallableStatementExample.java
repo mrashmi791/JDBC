@@ -22,7 +22,7 @@ public class CallableStatementExample {
 	 */
 	public static void main(String[] args) throws Exception {
 		
-		Connection con = ConnectionConfiguration.getConnection();
+		Connection con = ConnectionConfiguration.getConnection("student_database");
 		Statement st = con.createStatement();
 
 

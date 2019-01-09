@@ -6,10 +6,11 @@ import java.sql.DriverManager;
 
 public class ConnectionConfiguration {
 	
-	public static Connection getConnection() throws Exception {
+	public static Connection getConnection(String databaseName) throws Exception {
+		
 		Driver d = new com.mysql.cj.jdbc.Driver();
 		DriverManager.registerDriver(d);
-		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3308/student_database", "root", "Ankit@123");
+		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3308/"+ databaseName, "root", "Ankit@123");
 
 		return con;
 	}

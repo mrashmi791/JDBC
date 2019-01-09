@@ -34,7 +34,7 @@
 			public static void main(String[] args) throws Exception {
 				
 				// Database connection..!
-				Connection con = ConnectionConfiguration.getConnection();
+				Connection con = ConnectionConfiguration.getConnection("student_database");
 				Statement st = con.createStatement();
 		
 				Scanner sc = new Scanner(System.in);

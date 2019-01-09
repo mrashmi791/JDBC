@@ -22,7 +22,7 @@ public class InsertRecordByUser {
 		String query = "insert into  studentInfo values ("+ id + ",'" + name + "'," + roll + ")";
 		
 		// connection..
-		Connection con = ConnectionConfiguration.getConnection();
+		Connection con = ConnectionConfiguration.getConnection("student_database");
 		Statement st = con.createStatement();
 		
 		ResultSet rs = st.executeQuery(query);
