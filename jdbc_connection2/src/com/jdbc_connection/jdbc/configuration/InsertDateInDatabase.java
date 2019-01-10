@@ -66,6 +66,9 @@ public class InsertDateInDatabase {
 		
 		int count = pst.executeUpdate();
 		System.out.println(count);
+		
+		st.close();
+		sc.close();
 	}
 
 }
