@@ -5,7 +5,7 @@ package com.jdbc_connection.jdbc.configuration;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.sql.Connection;
@@ -71,6 +71,8 @@ public class InsertImageInDatabase {
 		if(rs.next()) {
 			fos.write(rs.getBytes(2));
 		}
+		
+		fos.close();
 		
 	}
 	
