@@ -1,3 +1,4 @@
+
 /**
  * 
  */
@@ -46,7 +47,12 @@ public class RunnerOfAllData {
 					
 			case 2: InsertAllDataInDatabase.show(con, sc);
 					break;
-					
+				
+			case 3: InsertAllDataInDatabase.insertByProcedure(con, sc);
+					break;
+			case 4: InsertAllDataInDatabase.showAllRecords(con);
+					break;
+	
 			}
 		} while(choice != 0) ;
 			sc.close();
