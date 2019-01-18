@@ -9,7 +9,7 @@ import java.util.Scanner;
  * @author lenovo
  *
  */
-public class NumberPattern {
+public class NumberRightangleTriangle {
 
 	/**
 	 * @param args
@@ -17,19 +17,15 @@ public class NumberPattern {
 	 * @author Rashmi
 	 */
 	public static void main(String[] args) {
-
-
+		
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Enter rows");
 		int row = sc.nextInt();
 		
-		int k = 1;
-		
-		for(int i = 1 ; i <= row ; i++ ) {
-			for (int j = 1 ; j <= row ; j++) {
-				System.out.print(k + " ");
-				k++;
+		for(int i = 1; i <=row; i++) {
+			for(int j = 1; j<= i; j++) {
+				System.out.print(row-i+1);
 			}
 			System.out.println();
 		}
