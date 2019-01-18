@@ -34,6 +34,7 @@ public class NumberInSquarePattern {
 			}
 			System.out.println();
 		}
+		sc.close();
 	}
 
 }
